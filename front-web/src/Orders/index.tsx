@@ -37,7 +37,7 @@ function Orders() {
         const productsIds = selectedProducts.map(({ id }) => ({ id }));
         const payload = {
             ...orderLocation!,
-            products: productsIds
+            productsDTOs: productsIds
         }
 
         saveOrder(payload).then((response) => {

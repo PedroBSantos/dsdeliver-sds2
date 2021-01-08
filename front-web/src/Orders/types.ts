@@ -17,5 +17,5 @@ export type ProductId = {
 }
 
 export type OrderPayload = {
-    products: ProductId[];
+    productsDTOs: ProductId[];
 } & OrderLocationData;
